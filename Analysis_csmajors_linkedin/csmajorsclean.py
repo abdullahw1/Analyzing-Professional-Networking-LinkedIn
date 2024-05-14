@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-def clean_data(input_file, output_file, max_profiles=10000):
+def clean_data(input_file, output_file, max_profiles=1000):
     with open(input_file, 'r') as file:
         data = [json.loads(line) for line in file]
 
